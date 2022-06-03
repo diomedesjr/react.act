@@ -237,7 +237,7 @@ function App() {
     <div className="container">
       <div className="row align-items-center">
         <div className="col-md-4">
-          <span className="copyright">Copyright &copy; Your Website 2019</span>
+          <span className="copyright">Copyright &copy; DiomedesJr 2022</span>
         </div>
         <div className="col-md-4">
           <ul className="list-inline social-buttons">
