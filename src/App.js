@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import Portfolio from './components/Portfolio'
 import './App.css';
 import { Nav, Navbar, NavLink } from 'react-bootstrap'
+import Header from './components/Header'
+import Contact from './components/Contact'
 
 
 function App() {
@@ -37,8 +39,8 @@ function App() {
     <div className="App">
       <Navbar bg = "dark" variant = "dark" sticky="top" expand= "sm" collapseOnSelect>
     <div className="container1">
-      <Navbar.Brand>
-        <img src={logo} width="75rem" height="75rem" alt="logo"/>
+      <Navbar.Brand onClick={event =>  window.location.href='/Header'}>
+        <img onmouseover="bigImg(this)" src={logo} width="75rem" height="75rem" alt="logo"/>
         Diomedes
       </Navbar.Brand>
       <Navbar.Toggle />
@@ -53,17 +55,7 @@ function App() {
     </div>
   </Navbar>
 
-  
-  <header className="masthead">
-    <div className="container">
-      <div className="intro-text">
-        <div className="intro-lead-in">Hello, I'm Diomedes</div>
-        <div className="intro-sub-heading">I help designers, small agencies and businesses bring their ideas to life. Powered <br />by Figma, VS Code and coffee, I turn your requirements into CMS-ified and <br />ecommerce-ified websites - on time and on budget.</div>
-        <div className="intro-sub-heading">Got any questions?</div>
-        <a className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Contact me!</a>
-      </div>
-    </div>
-  </header>
+  <Header />
 
   
   <section className="page-section" id="services">
@@ -187,52 +179,7 @@ function App() {
       </div>
     </div>
   </section>
-
-  <section className="page-section" id="contact">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-12 text-center">
-          <h2 className="section-heading text-uppercase">Contact Us</h2>
-          <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-lg-12">
-          <form id="contactForm" name="sentMessage" novalidate="novalidate">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="form-group">
-                  <input className="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name."/>
-                  <p className="help-block text-danger"></p>
-                </div>
-                <div className="form-group">
-                  <input className="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address."/>
-                  <p className="help-block text-danger"></p>
-                </div>
-                <div className="form-group">
-                  <input className="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number."/>
-                  <p className="help-block text-danger"></p>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="form-group">
-                  <textarea className="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                  <p className="help-block text-danger"></p>
-                </div>
-              </div>
-              <div className="clearfix"></div>
-              <div className="col-lg-12 text-center">
-                <div id="success"></div>
-                <button id="sendMessageButton" className="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  
+  <Contact />
   <footer className="footer">
     <div className="container">
       <div className="row align-items-center">
