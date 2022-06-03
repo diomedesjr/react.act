@@ -1,13 +1,14 @@
 import React from 'react'
 
 export default ({portfolioLinks}) => {
-    return (
+    
+  return (
         <section className="bg-dark page-section" id="portfolio">
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
               <h2 className="section-heading text-uppercase text-light">Portfolio</h2>
-              <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <h3 className="section-subheading text-muted">Here's My Previous Project</h3>
             </div>
           </div>
           <div className="row">
