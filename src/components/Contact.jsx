@@ -6,8 +6,8 @@ const Contact = () => {
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
-          <h2 className="section-heading text-uppercase">Contact Us</h2>
-          <h3 className="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 className="section-heading text-uppercase">Contact Me</h2>
+          <h3 className="section-subheading text-muted">Just Leave Me A Message. I'll Respond As Soon As Possible</h3>
         </div>
       </div>
       <div className="row">
