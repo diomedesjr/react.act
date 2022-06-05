@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <Navbar bg = "dark" variant = "dark" sticky="top" expand= "sm" collapseOnSelect>
-      <Navbar.Brand onClick={event =>  window.location.href='/Header'}>
+      <Navbar.Brand onClick={event =>  window.location.href='#header'}>
         <img onmouseover="bigImg(this)" src={logo} width="75rem" height="75rem" alt="logo"/>
         Diomedes
       </Navbar.Brand>

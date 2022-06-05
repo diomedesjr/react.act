@@ -1,13 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 function About() {
+  const [name, setName] = useState('Diomedes Jr. Hinay');
+  const [college, setCollege] = useState('Bohol Island State University');
+  const [elementary, setElementary] = useState('San Roque Elementary School');
+  const [highschool, setHighschool] = useState('Infant King Academy');
+  const [course, setCourse] = useState('Bachelor of Science in Information Technology')
+
   return (
     <section className="page-section" id="about">
     <div className="container">
       <div className="row">
         <div className="col-lg-12 text-center">
           <h1 className="section-heading text-uppercase">About</h1>
-          <h3 className="section-subheading text-muted">I'm Diomedes Jr. Hinay a 3rd year student at Bohol Island State University taking up Bachelor of Science in Information Technology.</h3>
+          <h3 className="section-subheading text-muted">I'm {name} a 3rd year student at {college} taking up {course}.</h3>
           <h2 className="section-heading text-uppercase">Education</h2>
         </div>
       </div>
@@ -24,7 +30,7 @@ function About() {
                   <h4 className="subheading">Elementary</h4>
                 </div>
                 <div className="timeline-body">
-                  <p className="text-muted">San Roque Elementary School</p>
+                  <p className="text-muted">{elementary}</p>
                 </div>
               </div>
             </li>
@@ -38,7 +44,7 @@ function About() {
                   <h4 className="subheading">Junior High School</h4>
                 </div>
                 <div className="timeline-body">
-                  <p className="text-muted">Infant King Academy</p>
+                  <p className="text-muted">{highschool}</p>
                 </div>
               </div>
             </li>
@@ -52,7 +58,7 @@ function About() {
                   <h4 className="subheading">Senior High School</h4>
                 </div>
                 <div className="timeline-body">
-                  <p className="text-muted">Infant King Academy</p>
+                  <p className="text-muted">{highschool}</p>
                 </div>
               </div>
             </li>
@@ -66,7 +72,7 @@ function About() {
                   <h4 className="subheading">College</h4>
                 </div>
                 <div className="timeline-body">
-                  <p className="text-muted">Bohol Island State University</p>
+                  <p className="text-muted">{college}</p>
                 </div>
               </div>
             </li>
